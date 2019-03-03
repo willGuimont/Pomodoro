@@ -1,0 +1,20 @@
+.timer {
+    font-size: 5em;
+}
+
+.progress-container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+.action-button {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+.break-button {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}

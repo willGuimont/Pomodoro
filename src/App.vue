@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Pomodoro/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Pomodoro from './components/Pomodoro.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
-  }
-}
+    Pomodoro,
+  },
+};
 </script>
 
-<style>
+<style lang="scss">
+@import './sass/style.scss';
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 3em;
 }
 </style>
