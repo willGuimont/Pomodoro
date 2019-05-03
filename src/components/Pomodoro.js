@@ -69,8 +69,12 @@ export default {
         this.updateProgressBar();
       } else if (!this.ringtonePlayed && this.timeSeconds === 0) {
         this.playRingtone();
+        this.notify();
         this.ringtonePlayed = true;
       }
+    },
+    notify: function() {
+      this.$notification.show('Pomodoro', {body: 'Timed out'}, {});
     },
     startTimer: function() {
       this.paused = false;
@@ -102,5 +106,6 @@ export default {
     this.selectTime(this.timerTypes.Pomodoro);
     this.pauseTimer();
     setInterval(this.tick, 1000);
+    this.$notification.show('Pomodoro', {body: 'Notification enabled !'}, {});
   }
 };
