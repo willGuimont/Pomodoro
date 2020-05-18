@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div>
+      <vue-headful :title="title" description="Pomodoro Timer" />
+    </div>
     <h1 class="title">Pomodoro Timer</h1>
     <div>
       <button

@@ -16,7 +16,8 @@ export default {
       paused: false,
       ringtone: null,
       ringtonePlayed: false,
-      justSetTime: false
+      justSetTime: false,
+      title: "Pomodoro",
     };
   },
   methods: {
@@ -67,10 +68,12 @@ export default {
         this.timeSeconds -= 1;
         this.updateTimeString();
         this.updateProgressBar();
+        this.title = this.timeString;
       } else if (!this.ringtonePlayed && this.timeSeconds === 0) {
         this.playRingtone();
         this.notify();
         this.ringtonePlayed = true;
+        this.title = "Time's up!";
       }
     },
     notify: function() {
@@ -82,6 +85,7 @@ export default {
     pauseTimer: function() {
       this.paused = true;
       this.stopRingtone();
+      this.title = "Pomodoro";
     },
     resetTimer: function() {
       this.pauseTimer();
