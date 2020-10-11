@@ -1,3 +1,5 @@
+const axios = require('axios').default;
+
 export default {
   data: () => {
     return {
@@ -74,6 +76,7 @@ export default {
         this.notify();
         this.ringtonePlayed = true;
         this.title = "Time's up!";
+        axios.post('http://localhost:5000/pomodoro_end', {type: this.selectedType});
       }
     },
     notify: function() {
