@@ -12,8 +12,10 @@
     "node-sass": "^4.14.1",
     "sass-loader": "^7.3.1",
     "vue": "^2.6.11",
+    "vue-cookies": "^1.7.4",
     "vue-headful": "^2.1.0",
-    "vue-native-notification": "^1.0.5"
+    "vue-native-notification": "^1.0.5",
+    "vue2-timepicker": "^1.1.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.12.1",
